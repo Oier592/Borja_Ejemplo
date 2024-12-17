@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'proba',
+    loadChildren: () => import('./proba/proba.module').then( m => m.ProbaPageModule)
+  },
 ];
 
 @NgModule({
